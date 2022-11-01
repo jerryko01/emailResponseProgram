@@ -16,19 +16,28 @@
     <div>
     <form action="">
         <div>
-        <label for="name">Name:</label>
-        <input name="name" type="text" placeholder="Enter Recipient's Name">
+            <label for="name">Name(s):</label>
+            <input class="characteristic name" name="name" type="text" placeholder="Enter Recipient's Name">
         </div>
         <div>
-        <label for="email">Email:</label>
-        <input name="email" type="email" placeholder="Enter Recipient's Email">
+            <label for="location">Location(s):</label>
+            <input class="characteristic location" name="location" type="text" placeholder="Enter Recipient's Location">
         </div>
         <div>
-        <label for="location">Location:</label>
-        <input name="location" type="text" placeholder="Enter Recipient's Location">
+            <label for="email">Email(s):</label>
+            <input class="characteristic email" name="email" type="email" placeholder="Enter Recipient's Email">
         </div>
-        <button> Click to Add Customization</button>
-        <button form="submit">Click to Submit</button>
+        <div>
+            <label for="location">Subject:</label>
+            <input class="characteristic subject" name="subject" type="text" placeholder="Enter the Email's Subject">
+        </div>
+        <div>
+            <h2>Add a Custom Feature:</h2>
+            <input name="customFeature" type="text" placeholder="Enter Custom Feature">
+            <input name="customValue" type="text" placeholder="Enter Custom Value">
+            <button id="custom">Customize!</button>
+        </div>
+        <a id="submit" href="mailto:jerrytake01@gmail.com?subject=Test&body=Dear%20Jerry%2C%0D%0A%0D%0AHow%20are%20you%3F%0D%0A%0D%0ASincerely%2C%0D%0AJerry%20Ko">Send mail</a>
     </form>
     </div>
 </body>
